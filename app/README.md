@@ -1,0 +1,1 @@
+This is a personal portfolio website built using Flask, a lightweight Python web framework. It showcases my skills, projects, and experience as a software engineer. The website includes sections like About Me, Projects, Skills, and Contact.
