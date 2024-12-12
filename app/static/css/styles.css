@@ -20,7 +20,56 @@ body {
     padding: 2%;
     border: 2px solid beige;
 }
-
+/* Hamburger Menu */
+.hamburger {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+  }
+  /* Nav Links for Mobile (Hidden by Default) */
+.nav-links {
+    display: none; /* Hidden by default */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #333;
+    width: 100%;
+    padding: 1rem;
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  /*
 .nav-links {
     display: flex;                  /* Use flexbox to arrange links horizontally */
     justify-content: space-between; /* Space links evenly */
