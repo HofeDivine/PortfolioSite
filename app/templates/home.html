@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <title>Homepage</title>
 </head>
 <body>
@@ -11,14 +12,14 @@
            <h1>Logo</h1>
         </div>
         <nav class="nav-links">
-            <ul>
-                <li><a href="/aboutUs">About Us</a></li>
-                <li><a href="/services">Services</a></li>
-                <li><a href="/portfolio">Portfolio</li>
-                <li><a href="/hireMe">Hire Me</li>
+            
+                <a href="/aboutUs">About Us</a>
+                <a href="/services">Services</a>
+                <a href="/portfolio">Portfolio</a>
+                <a href="/hireMe">Hire Me</a>
                 
             
-            </ul>
+            
         </nav>
         
     </header>

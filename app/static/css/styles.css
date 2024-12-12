@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #282a39;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    border: 2px solid beige;
+}
+
+.nav-links {
+    display: flex;                  /* Use flexbox to arrange links horizontally */
+    justify-content: space-between; /* Space links evenly */
+    gap: 20px;                      /* Adds space between links */
+    list-style: none;               /* Remove bullet points from the list */
+    padding: 0;                     /* Remove padding around the list */
+    margin: 0;                      /* Remove default margin from the list */
+    width: 60%; 
+    border:solid red;        /* Ensure each list item stays inline */
+}                   /* Set the width of the nav container */
+
+
+.nav-links li {
+    display: inline-block;  
+   
+}
+.nav-links a {
+    text-decoration: none;          /* Remove underline from the links */
+    color: black;                   /* Set text color */
+    font-size: 16px;                /* Set font size */
+    padding: 10px 15px;             /* Add padding around the links */
+    display: block;                 /* Make the links block-level elements */
+}
