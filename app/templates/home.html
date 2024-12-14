@@ -7,38 +7,32 @@
     <title>Homepage</title>
 </head>
 <body>
-    <header class="header">
-        <div class="logo">
-           <h1>Logo</h1>
-        </div>
-        <button class="harmburger" aria-label="Toggle Navigation">
-            ☰
-        </button>
-        <nav class="nav-links">
+    <a href="/aboutUs" class="section-link mobile-only">
+        <section class="clickable-section about-section">
             
-                <a href="/aboutUs">About Us</a>
-                <a href="/services">Services</a>
-                <a href="/portfolio">Portfolio</a>
-                <a href="/hireMe">Hire Me</a>
-                
-            
-            
-        </nav>
+            <h1>About Me</h1>
+            <p>Learn more about me!</p>
+        </section>
+    </a>
+    <a href="/portfolio" class="section-link mobile-only">
+        <section class="clickable-section portfolio-section">
+            <h1>Portfolio</h1>
+            <p>Check out my amazing portfolio!</p>
+        </section>
+    </a>
+        <a href="/services" class="section-link mobile-only">
+            <section class="clickable-section services-section">
+                <h1>Services</h1>
+                <p>Discover the services I offer!</p>
+            </section>
+        </a>
+        <a href="/hireMe" class="section-link mobile-only">
+            <section class="clickable-section hireMe-section">
+                <h1>About Me</h1>
+                <p>Learn more about me!</p>
+            </section>
+        </a>
         
-    </header>
-    <section class="home-body">
-        <div class="name-description">
-            <h1>FALCOVINHO</h1>
-        </div>
-        <div class="MyPic">
-           <h1>FALCOVINHO</h1>
-        </div>
-    </section>
-    <script>
-        // Select hamburger button and the nav-linkscontainer
-        const hamburger = document.querySelector('.harmburger');
-        const navlinks = document.querySelector('.nav-links');
         
-    </script>
 </body>
 </html>

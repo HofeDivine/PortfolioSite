@@ -3,93 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #282a39;
-    color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2%;
-    border: 2px solid beige;
-}
-/* Hamburger Menu */
-.hamburger {
-    font-size: 1.5rem;
-    background: none;
-    border: none;
-    color: #fff;
-    cursor: pointer;
+/* Base Styles for All Clickable Sections */
+.clickable-section {
     display: block;
-  }
-  /* Nav Links for Mobile (Hidden by Default) */
-.nav-links {
-    display: none; /* Hidden by default */
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #333;
-    width: 100%;
-    padding: 1rem;
-  }
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-  /*
-.nav-links {
-    display: flex;                  /* Use flexbox to arrange links horizontally */
-    justify-content: space-between; /* Space links evenly */
-    gap: 20px;                      /* Adds space between links */
-    list-style: none;               /* Remove bullet points from the list */
-    padding: 0;                     /* Remove padding around the list */
-    margin: 0;                      /* Remove default margin from the list */
-    width: 60%; 
-    border:solid red;        /* Ensure each list item stays inline */
-}                   /* Set the width of the nav container */
-
-
-.nav-links li {
-    display: inline-block;  
-   
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
 }
-.nav-links a {
-    text-decoration: none;          /* Remove underline from the links */
-    color: black;                   /* Set text color */
-    font-size: 16px;                /* Set font size */
-    padding: 10px 15px;             /* Add padding around the links */
-    display: block;                 /* Make the links block-level elements */
+
+.clickable-section:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.02); /* Slight zoom-in effect on hover */
+    cursor: pointer; /* Changes cursor to indicate interactivity */
+}
+
+.mobile-only {
+    display: block; /* Visible by default */
+}
+
+@media (min-width: 768px) {
+    .mobile-only {
+        display: none; /* Hidden on larger screens */
+    }
 }
