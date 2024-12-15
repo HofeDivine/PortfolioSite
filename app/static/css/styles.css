@@ -3,27 +3,128 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+body {
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none;
+}
 /* Base Styles for All Clickable Sections */
 .clickable-section {
     display: block;
     padding: 20px;
-    margin: 10px 0;
+    margin: 10px auto;
+    
     border-radius: 8px;
     text-align: center;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease ;
     cursor: pointer;
+    max-width: 100%;
 }
 
 .clickable-section:hover {
-    background-color: #e0e0e0;
+   
     transform: scale(1.02); /* Slight zoom-in effect on hover */
     cursor: pointer; /* Changes cursor to indicate interactivity */
 }
 
-.mobile-only {
-    display: block; /* Visible by default */
+
+.about-section {
+     background-color: rgb(51 65 85);
+    
 }
 
+/* Profile Photo Styles */
+.profile-photo {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Keeps image square */
+    border-radius: 50%; /* Makes it circular */
+    border: 3px solid #f4a261; /* Adds a border around the photo */
+    display: block;
+    margin: 0 auto 10px; /* Centers the photo and adds spacing below */
+    object-fit: cover; /* Ensures the photo fits within its dimensions */
+    
+}
+.about-textStrips {
+    display: flex;
+    flex-direction: column; /* Arrange strips vertically */
+    gap: 10px; /* Space between strips */
+    width: 100%; /* Full width of the parent container */
+    max-width: 600px; /* Optional: Restrict maximum width */
+    margin: 0 auto; /* Center the strips on the page */
+    padding: 10px; /* Optional: Add padding around the container */
+}
+.strips {
+    background-color: #e0e0e0; /* Light gray for the strips */
+    color: #333; /* Dark text color for contrast */
+    padding: 10px 15px; /* Add some space inside each strip */
+    border-radius: 5px; /* Round the corners slightly */
+    font-size: 0.9rem; /* Adjust font size as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    text-align: center; /* Center-align the text */
+}
+/* Portfolio Section */
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #5b0b43fb;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 100%;
+}
+
+.portfolio-section h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Grid Container for Projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust columns based on screen size */
+
+    gap: 10px;
+    width: 100%; /* Stretch the grid to full width */
+    padding: 5px;
+}
+
+/* Individual Project Card */
+.project-card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 8px;
+    text-decoration: none;
+}
+
+.project-card p {
+    font-size: 0.9rem;
+    color: #666;
+    text-decoration: none;
+}
+
+/* Hover Effects for Project Cards */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}.mobile-only {
+    display: block; /* Visible by default */
+}
 @media (min-width: 768px) {
     .mobile-only {
         display: none; /* Hidden on larger screens */
